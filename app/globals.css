@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --maroon: #7A1B29; --crimson: #9E2A38; --parchment: #FCFBF9; --charcoal: #2C2C2C; }
+* { box-sizing: border-box; }
+html { background: #f1eeeb; }
+body { margin: 0; color: var(--charcoal); background: #f6f4f1; font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.grain { background-image: radial-gradient(rgba(122,27,41,.045) .7px, transparent .7px); background-size: 7px 7px; }
+.certificate-paper { width: min(100%, 820px); aspect-ratio: 0.707 / 1; background: var(--parchment); box-shadow: 0 22px 55px rgba(44,44,44,.16); }
+.certificate-inner { height: 100%; position: relative; border-style: double; }
+.certificate-inner:before { content: ""; position: absolute; inset: 15px; border: 1px solid rgba(122,27,41,.38); pointer-events: none; }
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area { position: absolute; inset: 0; width: 100%; }
+  .certificate-paper { box-shadow: none; width: 100%; }
+  @page { size: A4 portrait; margin: 0; }
+}

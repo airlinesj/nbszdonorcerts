@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  CLERK
+}
+
+model User {
+  id           String           @id @default(cuid())
+  email        String           @unique
+  passwordHash String
+  role         Role             @default(CLERK)
+  logs         CertificateLog[] @relation("PrintedBy")
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+}
+
+model Donor {
+  id              String           @id @default(cuid())
+  donorIdNumber   String           @unique
+  fullName        String
+  unitsDonated    Int              @default(0)
+  certificateLogs CertificateLog[]
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+}
+
+model CertificateLog {
+  id              String   @id @default(cuid())
+  certificateNumber String
+  donorId          String
+  printedBy        String
+  createdAt        DateTime @default(now())
+  donor            Donor    @relation(fields: [donorId], references: [id])
+  user             User     @relation("PrintedBy", fields: [printedBy], references: [id])
+
+  @@index([certificateNumber])
+  @@index([createdAt])
+}
