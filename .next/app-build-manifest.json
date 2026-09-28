@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/chunks/164f4fb6-e5e7c2c3b782ce60.js",
+      "static/chunks/ad2866b8-fe78772e8e3901c2.js",
+      "static/chunks/894-6e8985ec14c20ebe.js",
+      "static/chunks/app/page-1e2d23a84cfdeca0.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/css/c801c1cc4c399963.css",
+      "static/chunks/app/layout-6fefdf13640a9951.js"
+    ],
+    "/error": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/chunks/972-09cd51d72df15983.js",
+      "static/chunks/app/error-019201cf069f7cde.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/chunks/972-09cd51d72df15983.js",
+      "static/chunks/app/not-found-30b1f255433e8be5.js"
+    ],
+    "/global-error": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/chunks/app/global-error-7d87c2766e038cde.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-bdee14295aba3f53.js",
+      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
+      "static/chunks/117-a555172fb8d682dd.js",
+      "static/chunks/main-app-82e38ed04be29f6f.js",
+      "static/chunks/app/_not-found/page-c1bbe1b4bc8170a6.js"
+    ]
+  }
+}
